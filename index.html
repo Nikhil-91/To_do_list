@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #333;
+        }
+
+        #main-card {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px 2px #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-5 mx-auto">
+            <div class="card my-5 border border-success" id="main-card">
+                <div class="card-header text-center bg-success"><strong>Task List</strong> </div>
+                <div class="card-body">
+                    <form action="#" class="task-form">
+                        <input type="text" class="form-control input-task border border-success" placeholder="New Task">
+                        <button class="btn-outline-success btn my-2" id="btn">Submit</button>
+                        <button class="btn btn-outline-success my-2 clear-task">Clear</button>
+                    </form>
+                    <span class="text-muted my-3"><strong>Tasks</strong> </span>
+
+                    <input type="text" class="form-control filter-task my-2 border border-success"
+                        placeholder="Fiter Tasks">
+                    <ul class="list-group collection my-2"></ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
